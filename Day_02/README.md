@@ -12,7 +12,6 @@ Flutter ninja id card.
 Clone the project
 
 ```bash
-  git clone 
   flutter pub get
   flutter run
 ```

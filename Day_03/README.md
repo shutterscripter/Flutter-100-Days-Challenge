@@ -12,8 +12,7 @@ World clock app using world clock api.
 
 Clone the project
 
-```bash
-  git clone 
+```bash 
   flutter pub get
   flutter run
 ```

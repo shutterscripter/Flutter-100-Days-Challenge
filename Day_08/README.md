@@ -19,7 +19,6 @@ Simple alert dialog with two options.
 Clone the project
 
 ```bash
-  git clone 
   flutter pub get
   flutter run
 ```

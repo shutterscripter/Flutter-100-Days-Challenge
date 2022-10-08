@@ -15,7 +15,6 @@ Travel app with animated Splash screen
 Clone the project
 
 ```bash
-  git clone 
   flutter pub get
   flutter run
 ```

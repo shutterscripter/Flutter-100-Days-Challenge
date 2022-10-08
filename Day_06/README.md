@@ -11,7 +11,6 @@ Rich Text Widget class Demo
 Clone the project
 
 ```bash
-  git clone 
   flutter pub get
   flutter run
 ```

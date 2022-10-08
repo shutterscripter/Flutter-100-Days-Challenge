@@ -13,7 +13,6 @@ Animate login screen with flutter animation.
 Clone the project
 
 ```bash
-  git clone 
   flutter pub get
   flutter run
 ```
