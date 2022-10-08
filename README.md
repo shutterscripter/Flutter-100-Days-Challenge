@@ -2,7 +2,7 @@
 
 Flutter 100 days challenge for become more productive.
 
-## Day 001 - [Circular Counter - Click  to view](https://github.com/jayesh2272001/)
+## Day 001 - [Circular Counter - Click  to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_01)
 ![Day-01](path/to/file.png)
 
 ## Day 002 - [ID card  - Click  to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_02)
