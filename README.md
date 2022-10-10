@@ -3,26 +3,44 @@
 Flutter 100 days challenge for become more productive.
 
 ## Day 001 - [Circular Counter - Click  to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_01)
-![Day-01](path/to/file.png)
+<img alt="Circular_counter" src="./gimges/day_01.jpg" height="200"></img>
+#
+
 
 ## Day 002 - [ID card  - Click  to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_02)
-![Day-02](path/to/file.png)
+<img alt="ID card" src="./gimges/day_02.jpg" height="200"></img>
+#
 
 ## Day 003 - [World Clock - Click  to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_03)
-![Day-03](path/to/file.png)
+<img alt="World Clock" src="./gimges/day_03.jpg" height="200"></img>
+#
 
 ## Day 004 - [Animates Splash Screen - Click  to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_04)
-![Day-04](path/to/file.png)
+<img alt="Animates Splash Screen" src="./gimges/day_04.jpg" height="200"></img>
+#
 
 ## Day 005 - [Login Screen - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_05)
-![Day-05](path/to/file.png)
+<img alt="Login Screen" src="./gimges/day_05.jpg" height="200"></img>
+#
 
 ## Day 006 - [Rich Text Class Widget - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_06)
-![Day-06](path/to/file.png)
+<img alt="Rich Text Class Widget" src="./gimges/day_06.jpg" height="200"></img>
+#
 
 ## Day 007 - [Calculator - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_07)
-![Day-07](path/to/file.png)
+<img alt="Calculator" src="./gimges/day_07.jpg" height="200"></img>
+#
 
 
 ## Day 008 - [Alert Dialog - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_08)
-![Day-08](path/to/file.png)
+<img alt="alert_dialog" src="./gimges/day_08.jpg" height="200"></img>
+#
+
+
+## Day 009 - [Marvel Movies - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_08)
+<img alt="marvel_movies" src="./gimges/day_09.jpg" height="200"></img>
+#
+
+## Day 010 - [Marvel Movies - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_08)
+<img alt="marvel_movies" src="./gimges/day_09.jpg" height="200"></img>
+
