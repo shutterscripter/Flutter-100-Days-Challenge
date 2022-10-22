@@ -1,6 +1,5 @@
-# Sliver App Bar Widget Class
-An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.
-
+# Onboarding Screen
+Onboarding information screen sceleton. with next , skip and done option.
 
 ## Screenshots
 ### Home Page

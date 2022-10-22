@@ -41,6 +41,6 @@ Flutter 100 days challenge for become more productive.
 <img alt="marvel_movies" src="./gimges/day_09.jpg" height="200"></img>
 #
 
-## Day 010 - [Marvel Movies - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_08)
-<img alt="marvel_movies" src="./gimges/day_09.jpg" height="200"></img>
+## Day 010 - [Expanded Widget Class - Click to view](https://github.com/jayesh2272001/Flutter-100-Days-Challenge/tree/main/Day_08)
+<img alt="expanded_widget" src="./gimges/day_09.jpg" height="200"></img>
 

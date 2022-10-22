@@ -1,16 +1,25 @@
-# marvel
+# Marvel Movies App
+Movies details app using marvel movie API.
 
-A new Flutter project.
 
-## Getting Started
+## Screenshots
+### Home Page
+<img alt="Home Screen" src="./assets/Screenshot_main.png" height="300"/></br>
 
-This project is a starting point for a Flutter application.
+### Cupertino(IOS) alert dialog demp
+<img alt="Calculator" src="./assets/Screenshot_details.png" height="300"/></br>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run Locally
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone the project
+
+```bash
+  flutter pub get
+  flutter run
+```
+
+## Links
+
+* [Website](https://jayesh-shinde.web.app/)
+

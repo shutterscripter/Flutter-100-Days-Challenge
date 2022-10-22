@@ -1,9 +1,11 @@
-import 'dart:convert';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:marvel/model/movie_model.dart';
-import 'package:marvel/screens/movie_info.dart';
+import 'package:marvel/screens/all_movies.dart';
+import 'package:marvel/screens/list_view.dart';
+import 'package:marvel/screens/phase_five_movies.dart';
+import 'package:marvel/screens/phase_four_movies.dart';
+import 'package:marvel/screens/phase_one_movies.dart';
+import 'package:marvel/screens/phase_three_movies.dart';
+import 'package:marvel/screens/phase_two_movies.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,91 +15,64 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  var apiUrl = "https://mcuapi.herokuapp.com/api/v1/movies";
-  List<MarvelMoviesModel> moviesList = [];
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getMarvelMovies();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(21, 20, 31, 1),
       appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                moviesList = List.from(moviesList.reversed);
-                setState(() {
-
-                });
-              },
-              icon: const Icon(Icons.sort_by_alpha,size: 20,))
-        ],
-        title: const Text("Marvel "),
         elevation: 0,
         backgroundColor: const Color.fromRGBO(21, 20, 31, 1),
       ),
-      body: moviesList.isNotEmpty
-          ? Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: GridView.builder(
-                itemCount: moviesList.length,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    childAspectRatio: 2 / 3,
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 10,
-                    crossAxisSpacing: 10),
-                itemBuilder: (BuildContext context, int index) {
-                  return InkWell(
-                    onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                MovieInfo(movies: moviesList[index]))),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: CachedNetworkImage(
-                        fit: BoxFit.fill,
-                        imageUrl: moviesList[index].coverUrl.toString(),
-                      ),
-
-                    ),
-                  );
-                },
-              ),
-            )
-          : const Center(
-              child: CircularProgressIndicator(
-                color: Colors.white,
+      body: Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children:  const [
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+              child: Text(
+                "Find Movies",
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: TextField(
+                cursorColor: Colors.white,
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Color.fromRGBO(33, 31, 48, 1),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    borderSide: BorderSide(color: Colors.transparent),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    borderSide: BorderSide(color: Colors.transparent),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    borderSide: BorderSide(color: Colors.transparent),
+                  ),
+                  labelText: "Search Movie",
+                  labelStyle: TextStyle(color: Colors.grey, fontSize: 18),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: MoviesLists() ,
+            )
+          ],
+        ),
+      ),
     );
-  }
-
-  /* method for request data */
-  void getMarvelMovies() {
-    var url = Uri.parse(apiUrl);
-    http.get(url).then((respone) {
-      if (respone.statusCode == 200) {
-        var responseBody = respone.body;
-        var decodedData = jsonDecode(responseBody);
-        final List marvelData = decodedData['data'];
-        for (int i = 0; i < marvelData.length; i++) {
-          final mcuObj = MarvelMoviesModel.fromJson(marvelData[i]);
-          moviesList.add(mcuObj);
-        }
-
-        //reversing order of list
-        moviesList = List.from(moviesList.reversed);
-        setState(() {});
-      } else {}
-    }).catchError((e) {
-      debugPrint("==========$e===========");
-    });
   }
 }
