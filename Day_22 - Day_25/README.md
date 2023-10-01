@@ -19,4 +19,4 @@ A Flutter-based news app that allows users to read the latest news articles from
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/flutter-news-app.git
+   git clone https://github.com/shutterscripter/Flutter-100-Days-Challenge/tree/main/Day_22%20-%20Day_25
