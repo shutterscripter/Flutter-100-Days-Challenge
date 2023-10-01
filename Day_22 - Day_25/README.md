@@ -1,16 +1,22 @@
-# news_app
+# Flutter News App Using 'newsapi.org' API
+A Flutter-based news app that allows users to read the latest news articles from various sources and categories. Data is fetched from the News API, and the app includes a landing page that is displayed only once using `shared_preferences`.
 
-A new Flutter project.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Browse the latest news articles from various sources.
+- Landing page displayed only once using `shared_preferences`.
+- Clean and intuitive user interface.
 
-A few resources to get you started if this is your first Flutter project:
+# Screenshots
+<img src="assets/landing_page.jpg" width="300">
+<img src="assets/all_news.jpg" width="300">
+<img src="assets/news_details.jpg" width="300">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/flutter-news-app.git

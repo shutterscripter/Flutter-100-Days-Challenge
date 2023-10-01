@@ -39,7 +39,6 @@ class _ArticleViewState extends State<ArticleView> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Flutter",
